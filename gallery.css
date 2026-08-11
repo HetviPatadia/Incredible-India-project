@@ -1,0 +1,135 @@
+/* ================= GLOBAL BODY ================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0; /* soft white */
+}
+
+/* ================= MAIN HEADER ================= */
+header, .main-header {
+    background: linear-gradient(to right, #ff9933, white, #138808);
+    padding: 25px;
+    text-align: center;
+    color: #000080; /* navy blue */
+    letter-spacing: 2px;
+}
+
+/* ================= NAVIGATION ================= */
+/* nav {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid #138808;
+} */
+
+/* nav a {
+    text-decoration: none;
+    color: #ff6600;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #000080; 
+} */
+
+/* ================= SECTION CONTENT ================= */
+section, .content {
+    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #138808; /* green */
+}
+
+p {
+    width: 70%;
+    margin: 10px auto;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================= BUTTON STYLE ================= */
+.button, a.button {
+    text-decoration: none;
+    background-color: #000080; /* Ashoka blue */
+    color: white;
+    padding: 8px 18px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.button:hover, a.button:hover {
+    background-color: #ff9933; /* saffron */
+    color: black;
+}
+
+/* ================= GALLERY GRID ================= */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+
+.state-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-top: 5px solid #ff9933;
+    transition: 0.3s;
+}
+
+.state-card:hover {
+    transform: translateY(-5px);
+    border-top: 5px solid #138808;
+}
+
+.state-card h2 {
+    color: #138808;
+}
+
+.state-card a {
+    text-decoration: none;
+    background-color: #000080;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.state-card a:hover {
+    background-color: #ff9933;
+    color: black;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #138808;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    p {
+        width: 90%;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact & Feedback Form</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+
+    <h1 align="center">Contact & Feedback</h1>
+
+    <hr size="3" color="orange">
+    <nav style="font-family: Georgia, 'Times New Roman', Times, serif;">
+       <center>
+            <a href="index.html">HOME</a> | 
+            <a href="about.html">DISCOVER INDIA</a> | 
+            <a href="Tourist.html">PLACES</a> | 
+            <a href="gallery.html">GALLERY</a> | 
+            <a href="contact.html">CONTACT</a> |
+       </center>
+    </nav>
+    
+    <hr size="3" color="green">
+
+    <h2 align="center">Contact Form</h2>
+
+    <form action="./submit.html">
+        
+        <h3>Visitor Details</h3>
+        <p>
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your name" required>
+        </p>
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </p>
+        <p>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" maxlength="10">
+        </p>
+        <p>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="1" max="120">
+        </p>
+
+        <hr>
+
+        <h3>Travel Information</h3>
+        <p>Type of traveller:</p>
+        <input type="radio" id="solo" name="traveller_type" value="solo">
+        <label for="solo">Solo</label><br>
+        <input type="radio" id="family" name="traveller_type" value="family">
+        <label for="family">Family</label><br>
+        <input type="radio" id="friends" name="traveller_type" value="friends">
+        <label for="friends">Friends group</label>
+        <br><br>
+
+        <p>What are you interested in?</p>
+        <input type="checkbox" id="history" name="interests" value="history">
+        <label for="history">History & monuments</label><br>
+        <input type="checkbox" id="nature" name="interests" value="nature">
+        <label for="nature">Nature & lakes</label><br>
+        <input type="checkbox" id="food" name="interests" value="food">
+        <label for="food">Food & shopping</label>
+        <br><br>
+
+        <label for="month">Planned month of visit:</label><br>
+        <select id="month" name="month">
+            <option value="">-- Select Month --</option>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+
+        <hr>
+
+        <h3>Your Message</h3>
+        <label for="message">Message / Questions:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your feedback or questions here"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset">
+        <hr>
+        <a href="tel:+911234567890">+911234567890</a>
+
+    </form>
+
+    <hr>
+    <footer>
+        <p>Thank you for visiting this demo tourist guide website.</p>
+    </footer>
+
+</body>
+</html>
+
+<!-- defination list
+validatuion in phone
+iframe -->
